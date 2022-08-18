@@ -1,0 +1,24 @@
+section#apps {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  iframe#apps-iframe {
+    width: 100%;
+    max-width: $apps-max-width;
+    margin-top: 1.5rem;
+
+    background-color: transparent;
+    filter: drop-shadow(rgba(128, 128, 128, 0.6) 1px 1px 10px);
+
+    @if ($apps-active-app == "app-jackpot") {
+      aspect-ratio: 9/5;
+    }
+
+    @if ($apps-active-app == "app-scratch") {
+      aspect-ratio: 1/1;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+*********
+**NOTES**
+*********
+
+- A changer (MàJ Weezio Saas) : class instantwin 
+- A intégrer : class de routes (nav + gestion err de parcours)
+- Nettoyer component form 
+- Nettoyer config.php 
+- Créer class Levels
+- Intégrer ML et appconfig à config (voir weezio saas)
+- Meilleure gestion des msg err formulaire
+-\ Limiter la visibilité des prompts
+- retirer ?opt dans l'url
+- Font sizes responsives
+
+- revamp gestion des sessions
+-\ source_id en cookie
+
+- api autocompletion adresse postale 
+
+- màj des mécaniques des jeux et de leur config (weezio saas)
+- compatibilité oEmbed à r&d
+- re param le cache
+- revoir l'accessibilité et perf :
+    - webP
+    - defer css / js

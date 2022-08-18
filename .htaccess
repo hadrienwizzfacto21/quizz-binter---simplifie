@@ -1,0 +1,58 @@
+# Disable Directory Browsing
+Options All -Indexes
+
+# Set PHP Variables
+# php_value upload_max_filesize 50M
+# php_value max_execution_time 240
+
+# Allow Cross-Domain Fonts
+<IfModule mod_headers.c>
+    <FilesMatch "\.(eot|otf|ttc|ttf|woff|woff2)$">
+        Header set Access-Control-Allow-Origin "*"
+    </FilesMatch>
+</IfModule>
+
+# Auto UTF-8 Encode
+AddDefaultCharset utf-8
+
+# Disable Internet Explorer Compatibility View
+<IfModule mod_headers.c>
+    BrowserMatch MSIE is-msie
+    Header set X-UA-Compatible IE=edge env=is-msie
+</IfModule>
+
+RewriteEngine On
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
+RewriteRule ^.*$ https://www.%1%{REQUEST_URI} [L,NE,R=301]
+
+# Force www in a Generic Way
+# RewriteCond %{HTTP_HOST} !^$
+# RewriteCond %{HTTP_HOST} !^www\. [NC]
+# RewriteCond %{HTTPS}s ^on(s)|
+# RewriteRule ^ http%1://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# Force HTTPS
+# RewriteEngine on
+# RewriteCond %{HTTPS} !on
+# RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+
+# Enable HTTP Strict Transport Security (HSTS) to prevent man-in-the-middle attacks.
+# https://developer.mozilla.org/en-US/docs/Web/Security/HTTP_strict_transport_security
+<IfModule mod_headers.c>
+    Header always set Strict-Transport-Security "max-age=31536000;includeSubDomains"
+</IfModule>
+
+# Remove cache
+<IfModule mod_headers.c>
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires 0
+</IfModule>
+
+# Stay on index file
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [L]

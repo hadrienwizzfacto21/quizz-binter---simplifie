@@ -1,0 +1,38 @@
+{
+  "Prize1": {
+    "id": "Prize1",
+    "Name": "1 voyage",
+    "Type": "Code",
+    "Level": 1,
+    "Prompts": "PRl1t",
+    "Assets": {
+      "Image": "./library/instantwin/assets/prizewin.jpg"
+    },
+    "Stocks": {
+      "Quantity": 1,
+      "MaxPerDay": 1,
+      "Frequency": 200,
+      "Date": "220513124110"
+    },
+    "Cue": [],
+    "Won": []
+  },
+  "Prize2": {
+    "id": "Prize2",
+    "Name": "30 goodies",
+    "Type": "Code",
+    "Level": 2,
+    "Prompts": "PRl1t",
+    "Assets": {
+      "Image": "./library/instantwin/assets/prizewin2.jpg"
+    },
+    "Stocks": {
+      "Quantity": 30,
+      "MaxPerDay": 30,
+      "Frequency": 1000,
+      "Date": "220512165501"
+    },
+    "Cue": [],
+    "Won": []
+  }
+}

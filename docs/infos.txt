@@ -1,0 +1,49 @@
+*********
+**INFOS**
+*********
+
+1 - Insérer les images du logo, hero, background etc dans /styles/img 
+        Controler le format/poids/extention
+
+2 - Configurer la page dans /src/config.php
+        Trois catégories principales :
+            - Meta (les paramètres techniques de la lp et de l'op)
+            - Templates (les paramètres de chaques composants de la page)
+            - Prompts (les principaux wording de la page)
+
+3 - Modifier les variables SCSS dans /styles/scss/_variables.scss
+        Elles sont organisées par composants ou par utilité
+        Les fonts peuvent être importés à la fin de ce fichier
+
+4 - Effectuer des retouches de CSS si nécessaire
+        Seulement si les variables et le fichiers config ne suffisent pas
+        Chaque composant dispose de son prompre fichier de style (ex: /src/components/header/_header.scss)
+        Bien differencier le code css ajouté du reste du code
+        Un fichier /styles/scss/_custom.scss est aussi à disposition
+
+5 - Configurer le jeu si nécessaire
+        Les jeux se situent dans /src/apps/{identifiant du jeu} et sont composés de trois éléments :
+            - Fichier appconfig.php : configurer les éléments propres au jeu en question
+            - Dossier assets : placer tous les éléments que dont le jeu aura besoin (png,jpg)
+            - Dossier src : les scripts du jeu
+
+6 - Configurer l'Instant Win
+        Par défaut l'IW n'est pris en compte que si le composant Apps est actif
+        Situé dans /src/class/InstantWin/ :
+            - Paramétrer les lots dans le fichier iwPrizesList.json
+            - Paramétrer les codes uniques dans iwCodesList.json
+            
+7 - Mettre à jour les éléments légaux
+        Placer le règlement à la racine /reglement.pdf
+        Et modifier les variables des Mentions Legales /src/components/mentionslegales/mentionslegales.php
+
+8 - Avant la mise en ligne
+        - Vérifier la remontée des datas à weezio (config.php : "postForm" => true) ainsi que les levels
+        - Vérifier les dates d'OP
+        - Réinitialiser l'InstantWin
+        - Faire le recettage 
+    
+/!\ Ajouter ?dev dans l'url pour bypass certains comportements de prod de la LP (ex: éviter les pages teasing/fin d'op). Désactiver avec ?dev=false.
+/!\ Ajouter ?source_id l'url avec un source_id en TestMode pour ne pas encombrer Weezio pendant le dev
+
+        

@@ -1,0 +1,17 @@
+section#networks {
+  grid-area: 1 / 1 / 2 / 3;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  filter: invert(100%);
+  margin: 1rem 0;
+  @include GlobalMarg;
+
+  img {
+    height: 40px;
+    width: 40px;
+    margin: 0 0.5rem;
+  }
+}

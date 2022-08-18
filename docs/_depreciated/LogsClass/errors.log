@@ -1,0 +1,8 @@
+[15-May-2022 02:02:01 Europe/Berlin] PHP Warning:  Undefined array key "wording" in M:\Programmes\GitHub\TPL-LandingPages\class\PromptsClass\PromptsClass.php on line 83
+[15-May-2022 02:02:01 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: implode(): Argument #1 ($pieces) must be of type array, string given in M:\Programmes\GitHub\TPL-LandingPages\class\PromptsClass\PromptsClass.php:83
+Stack trace:
+#0 M:\Programmes\GitHub\TPL-LandingPages\class\PromptsClass\PromptsClass.php(83): implode('<br>', NULL)
+#1 M:\Programmes\GitHub\TPL-LandingPages\components\prompts\prompts.php(14): Keemia\PromptsClass\PromptsClass->getWording()
+#2 M:\Programmes\GitHub\TPL-LandingPages\index.php(35): include('M:\\Programmes\\G...')
+#3 {main}
+  thrown in M:\Programmes\GitHub\TPL-LandingPages\class\PromptsClass\PromptsClass.php on line 83

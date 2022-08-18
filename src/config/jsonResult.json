@@ -1,0 +1,56 @@
+{
+  "meta": {
+    "task_id": "",
+    "interface_id": "",
+    "catalog_id": "",
+    "name": "",
+    "lang_choice": "",
+    "lang_default": "",
+    "assets_directory": ""
+  },
+  "media": [],
+  "template": {
+    "meta": {
+      "meta_item1": "",
+      "meta_item2": "",
+      "meta_itemN": ""
+    },
+    "param": {
+      "page1name": {
+        "section1name": {
+          "Item1name": "item1value",
+          "Item2name": {
+            "fr": "item1_fr_value",
+            "eng": "item1_eng_value"
+          },
+          "Item3name": "item3value"
+        },
+        "section2name": {
+          "Item1name": "item1value",
+          "Item2name": {
+            "web_s": "item2_ws_value",
+            "web_l": "item2_wl_value",
+            "kiosk_v": "item2_kv_value",
+            "kiosk_h": "item2_kh_value"
+          }
+        }
+      }
+    },
+    "design": {}
+  },
+  "game": {
+    "meta": {},
+    "param": {},
+    "design": {}
+  },
+  "quizz": {
+    "meta": {},
+    "param": {},
+    "design": {}
+  },
+  "form": {
+    "meta": {},
+    "param": {},
+    "design": {}
+  }
+}

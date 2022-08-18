@@ -1,0 +1,16 @@
+{
+  "name": "keemia/tpl-landing-pages",
+  "description": "Template des landing pages",
+  "autoload": {
+    "psr-4": {
+      "Keemia\\": "src/class/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Julien Pouzet",
+      "email": "julien.pouzet@wizzfactory.com"
+    }
+  ],
+  "require": {}
+}

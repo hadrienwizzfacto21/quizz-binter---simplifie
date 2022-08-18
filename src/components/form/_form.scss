@@ -1,0 +1,139 @@
+section#form,
+form#form--content {
+  max-width: 450px;
+  margin: auto;
+
+  span.error {
+    color: red;
+  }
+
+  label {
+    display: block;
+    width: 100%;
+    padding-top: 1rem;
+
+    color: $label-font-color;
+    font-size: $label-font-size;
+    font-weight: $label-font-weight;
+    text-align: $label-text-align;
+  }
+
+  .select-wrap {
+    position: relative;
+
+    &::after {
+      content: url("./ico/downarrow.svg");
+      pointer-events: none;
+      display: block;
+      position: absolute;
+      right: 15px;
+      top: 40px;
+    }
+
+    select {
+      appearance: none;
+    }
+  }
+
+  select,
+  option,
+  input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]) {
+    width: 100%;
+    margin-top: 5px;
+    padding: 0.75rem 1rem;
+
+    color: $input-font-color;
+    background-color: $input-background-color;
+    border-radius: $input-border-radius;
+    border: none;
+
+    @if $input-border-position== "all" {
+      border: solid $input-border-weight $input-border-color;
+    }
+    @if $input-border-position== "bottom" {
+      border-bottom: solid $input-border-weight $input-border-color;
+    }
+    @if $input-border-position== "top" {
+      border-top: solid $input-border-weight $input-border-color;
+    }
+
+    @if $input-box-shadow == "true" {
+      box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.2);
+    }
+  }
+
+  select:valid:required,
+  input:not([type="checkbox"]):valid:required {
+    border-color: $input-valid-color;
+  }
+
+  input[type="checkbox"],
+  [type="radio"] {
+    appearance: none;
+    width: 19.5px;
+    height: 18px;
+
+    background-color: $check-background-color;
+    border: solid 2px $check-border-color;
+    border-radius: $check-border-radius;
+    margin-right: 10px;
+    cursor: pointer;
+
+    &:checked {
+      position: relative;
+      appearance: none;
+
+      border: solid 2px $check-border-color;
+      overflow: hidden;
+
+      &::before {
+        content: url("./ico/check.svg");
+        position: absolute;
+        display: block;
+        bottom: -4px;
+
+        width: 14px;
+        margin: auto;
+
+        filter: invert(100%);
+      }
+    }
+  }
+
+  input[type="submit"] {
+    margin: 2rem auto;
+  }
+
+  input[type="number"] {
+    appearance: textfield;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  p.--required {
+    text-align: left;
+    margin: 1rem 0;
+    font-size: smaller;
+    color: $font-color;
+  }
+
+  .form-optin {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 1rem;
+    color: $font-color;
+
+    &:first-of-type {
+      padding-top: 2rem;
+    }
+
+    label {
+      padding-top: 0;
+    }
+  }
+}

@@ -1,0 +1,116 @@
+// Body
+$body-background-color: #43b02a;
+$body-background-attachment: fixed;
+$body-background-repeat: no-repeat;
+$body-background-size: cover;
+
+// Main
+$main-background-color: transparent;
+$main-max-width: 1400px;
+$main-full-grid-medium-width: 800px;
+$main-full-grid-large-width: 1400px;
+
+// Global
+$accent-color: white;
+$accent-dark-color: #057b97;
+$accent-light-color: #057b97;
+$font-family: "Roboto";
+$font-color: white;
+$font-size: calc(0.0625 * 16 * 1rem);
+$font-transform: none;
+$border-radius: 12px;
+
+// Header
+$header-background-color: transparent;
+$header-logo-max-width: 800px;
+
+// Footer
+$footer-background-color: transparent;
+$footer-font-color: white;
+
+// Apps
+$apps-max-width: 100%;
+$apps-active-app: "app-quiz"; //app-scratch/app-jackpot/app-wheel/app-quiz
+
+// Prompts
+$prompts-custom: "true"; //true/false. Modifier prompts.scss si custom
+
+// Mentions Legales
+$ml-custom: "false"; //true/false. Modifier ml.scss si custom
+
+// Labels
+$label-text-align: left;
+$label-font-color: white;
+$label-font-size: calc(0.0625 * 16 * 1rem);
+$label-font-weight: normal;
+
+// Inputs
+$input-box-shadow: "true"; //true/false
+$input-background-color: white;
+$input-font-color: black;
+$input-valid-color: green;
+$input-error-Color: red;
+$input-border-radius: 4px;
+$input-border-color: transparent;
+$input-border-weight: 0px;
+$input-border-position: "none"; //none/all/bottom/top
+
+// Checkbox
+$check-border-color: white;
+$check-border-radius: 4px;
+$check-background-color: transparent;
+
+// CTA
+$cta-template: "round"; //round/square
+$cta-border-width: 2px;
+$cta-border-radius: 12px;
+$cta-border-color: red;
+$cta-background-color: white;
+$cta-font-color: #43b02a;
+$cta-font-size: calc(0.0625 * 22 * 1rem);
+$cta-font-weight: bold;
+$cta-text-transform: normal;
+
+// P
+$p-font-family: "Roboto";
+$p-font-color: white;
+$p-font-size: calc(0.0625 * 18 * 1rem);
+$p-font-weight: normal;
+$p-text-transform: none;
+$p-text-align: center;
+
+// H1
+$h1-color: white;
+$h1-font-family: "Roboto";
+$h1-font-size: calc(0.0625 * 45 * 1rem);
+$h1-font-weight: 700;
+$h1-text-transform: none;
+$h1-text-align: center;
+
+// H2
+$h2-color: white;
+$h2-font-family: "Roboto";
+$h2-font-size: calc(0.0625 * 28 * 1rem);
+$h2-font-weight: bold;
+$h2-text-transform: none;
+$h2-text-align: center;
+
+// H3
+$h3-color: white;
+$h3-font-family: "Roboto";
+$h3-font-size: calc(0.0625 * 25 * 1rem);
+$h3-font-weight: bold;
+$h3-text-transform: none;
+$h3-text-align: center;
+
+// Anchors
+$a-text-decoration: underline;
+
+// Media queries
+$mq-small-screen: 400px;
+$mq-medium-screen: 700px;
+$mq-large-screen: 1200px;
+
+// Fonts imports
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,700;0,900;1,100;1,200;1,300;1,400;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");

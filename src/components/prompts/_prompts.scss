@@ -1,0 +1,48 @@
+section#prompts {
+  @include GlobalPadd;
+
+  @if ($prompts-custom == "true") {
+    text-align: center;
+    background-color: transparent;
+
+    h1 {
+      color: white;
+      font-size: 3.5rem;
+    }
+
+    h2 {
+      font-weight: 400;
+      color: white;
+      font-weight: bold;
+    }
+
+    p {
+      color: white;
+      text-align: center;
+      font-size: 1.2rem;
+    }
+
+    li {
+      margin: auto;
+      width: fit-content;
+      text-align: center;
+    }
+
+    a {
+      font-weight: normal;
+      color: white;
+    }
+  }
+
+  section.prompts-common {
+    grid-area: 1 / 1 / 2 / 3;
+
+    @include GlobalPadd;
+
+    @if ($prompts-custom == "true") {
+      * {
+        text-align: center;
+      }
+    }
+  }
+}

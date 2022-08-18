@@ -1,0 +1,45 @@
+#mentions-legales {
+  width: 100%;
+
+  & *,
+  p,
+  ul,
+  ol {
+    text-align: justify;
+    color: white;
+  }
+
+  ul,
+  ol {
+    margin: 0.55rem 0;
+  }
+
+  li {
+    margin: 0.25rem 0;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  h2 {
+    margin: 2.8rem 0 0.5rem;
+    text-align: center;
+  }
+
+  h3 {
+    margin: 1.8rem 0 0.5rem;
+  }
+
+  h4 {
+    margin: 1.3rem 0 0.5rem;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  @if ($ml-custom == "true") {
+    // CUSTOM CSS
+  }
+}
